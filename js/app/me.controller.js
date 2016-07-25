@@ -2,18 +2,11 @@
     'use strict';
 
 angular.module('minifb')
-.controller('meCtrl',['$scope','facebookService',function ($scope,facebookService) {
+.controller('meCtrl',['$scope',function ($scope) {
   $scope.title = "Welcome to My Profile";
   $scope.isLoggedIn = false;
-  $scope.getMyLastName =
-   facebookService.getMyLastName() 
-  
-     .then(function(response) {
-       
-       $scope.myProfile = response;
-      
-     }
-   );
+  $scope.getMyLastName = $scope.profile;
+   
 
  console.log($scope);
 }]);

@@ -1,7 +1,8 @@
 
-ngrok URL ~ https://3e2fd3ec.ngrok.io
+ngrok URL ~ http://meandyou.org
 
 For starters just "npm install" after cloning the repo
+then do "npm start"
 
 This is a angular app to login to facebook and list loggedin users.
 
